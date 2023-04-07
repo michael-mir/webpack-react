@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_react=self.webpackChunkwebpack_react||[]).push([[553],{553:(e,a,c)=>{c.r(a),c.d(a,{default:()=>r});var t=c(294);const r=()=>t.createElement("div",null,"Another page")}}]);

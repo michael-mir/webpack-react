@@ -1,0 +1,23 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "import",
+      {
+        "libraryName": "lodash",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "lodash"
+    ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        ["react-remove-properties", { "properties": ["data-testid"] }],
+        ["transform-remove-console", { "exclude": ["error", "warn"] }]
+      ]
+    }
+  }
+}
